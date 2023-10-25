@@ -1,0 +1,6 @@
+gmpy2
+numpy
+pyaml
+requests
+sphinx
+sphinx-rtd-theme

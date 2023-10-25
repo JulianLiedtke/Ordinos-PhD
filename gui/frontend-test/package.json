@@ -1,0 +1,39 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "com.test.frontend",
+  "cordovaId": "com.test.frontend",
+  "capacitorId": "",
+  "author": "mike.lauer <st155614@stud.uni-stuttgart.de>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.18.1",
+    "big-integer": "^1.6.48",
+    "bigint-crypto-utils": "^3.0.7",
+    "get-large-prime": "^1.0.3",
+    "paillier-bigint": "^3.1.1",
+    "quasar": "^1.0.0",
+    "random-bigint": "0.0.1",
+    "sjcl": "^1.0.8",
+    "systeminformation": "^4.26.9",
+    "vue-worker": "^1.2.1"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.8.10",
+    "quasar-app-extension-draggable": "^0.2.2",
+    "worker-loader": "^2.0.0"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}

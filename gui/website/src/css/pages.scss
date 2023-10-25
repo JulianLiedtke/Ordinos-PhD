@@ -1,0 +1,36 @@
+.card-middle {
+    margin-left: 25%;
+    width: 50%;
+    min-width: 250px;
+}
+.card-left {
+    background: $accent;
+    margin: 20px;
+    width: 25%;
+    min-width: 250px;
+    height: 25%;
+    min-height: 100px;
+    display: flex;
+    display: -webkit-flex;
+    p {
+        text-align: center;
+        margin: auto;
+    }
+    position: relative;
+}
+
+.card-right {
+    margin-left: 76%;
+    overflow: hidden;
+    background: $secondary;
+    width: 10%;
+    min-width: 250px;
+    height: max-content;
+    display: flex;
+    display: -webkit-flex;
+    p {
+        text-align: center;
+        margin: 20px;
+    }
+    position: relative;
+}

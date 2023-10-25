@@ -1,0 +1,45 @@
+.smaller {
+    width: 150px;
+}
+
+.changing {
+    background: $primary !important;
+}
+
+.helpCard {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.drop-target {
+    min-height: 75px;
+    background-color: gainsboro;
+} 
+
+.drop-start {
+    min-height: 75px;
+    background-color: grey;
+}
+
+.drag-enter {
+    outline-style: dashed;
+}
+
+.card-candidate {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 70px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .drop-target {
+        height: 200px;
+        width: 100px;
+        min-width: 100px;
+        background-color: gainsboro;
+    }       
+}

@@ -1,0 +1,26 @@
+{
+    "name": "ordinos-peerserver",
+    "version": "0.0.1",
+    "description": "Peer Server for Ordinos E-Voting System",
+    "productName": "Ordinos-PeerServer",
+    "cordovaId": "de.uni-stuttgart.sec.ordinos",
+    "capacitorId": "",
+    "author": "Institute of Information Security (SEC)",
+    "private": true,
+    "scripts": {
+        "test": "echo \"No test specified\" && exit 0"
+    },
+    "dependencies": {
+        "peer": "^0.6.1",
+        "peerjs": "^1.2.0",
+        "uuid": "^8.3.2"
+    },
+    "engines": {
+        "node": ">= 10.18.1",
+        "npm": ">= 6.13.4",
+        "yarn": ">= 1.21.1"
+    },
+    "browserslist": [
+        "last 1 version, not dead, ie >= 11"
+    ]
+}

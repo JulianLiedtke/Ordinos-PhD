@@ -1,0 +1,34 @@
+.pulse-intro {
+    animation: pulse-intro 2s infinite;
+}
+
+#introduction-btn {
+    position: absolute;
+}
+
+@keyframes pulse-intro {
+    // Start
+    0% {
+        transform: (scale(1))
+    }
+
+    // samller and down
+    25% {
+        transform: (scale(0.8));
+    }
+
+    // bigger and up
+    60% {
+        transform: (scale(1.04));
+    }
+
+    // smaller and down
+    80% {
+        transform: (scale(0.93));
+    }
+
+    // end
+    100% {
+        transform: (scale(1));
+    }
+}

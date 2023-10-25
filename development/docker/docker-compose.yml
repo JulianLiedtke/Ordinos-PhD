@@ -1,0 +1,81 @@
+---
+services:
+  as-server:
+    container_name: as-server
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/as-server/Dockerfile
+    environment:
+      PORT: "9001"
+    ports:
+      - 9001:9001
+
+  bb-server:
+    container_name: bb-server
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/bb-server/Dockerfile
+    environment:
+      PORT: "9002"
+    ports:
+      - 9002:9002
+
+  first-trustee-server:
+    container_name: first-trustee-server
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/trustee-server/Dockerfile
+    environment:
+      PORT: "9003"
+    ports:
+      - 9003:9003
+
+  second-trustee-server:
+    container_name: second-trustee-server
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/trustee-server/Dockerfile
+    environment:
+      PORT: "9004"
+    ports:
+      - 9004:9004
+
+  third-trustee-server:
+    container_name: third-trustee-server
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/trustee-server/Dockerfile
+    environment:
+      PORT: "9005"
+    ports:
+      - 9005:9005
+
+  peerserver:
+    container_name: peerserver
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/peerserver/Dockerfile
+    ports:
+      - 8000:8000
+
+  gui-website:
+    container_name: gui-website
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/gui-website/Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - ./../../gui/website:/data/gui/website
+
+  gui-app:
+    container_name: gui-app
+    build:
+      context: ./../../
+      dockerfile: ./development/docker/gui-app/Dockerfile
+    ports:
+      - 8081:8081
+    volumes:
+      - ./../../gui/app:/data/gui/app
+
+# TODO: Combine persistent servers with volumes
